@@ -8,7 +8,7 @@ function Navbar() {
                 <div className={styles.interface}>
                     <div className={styles.logo}>
                         <a className="logo" href="index.html">
-                            <img src=".\logo.png" alt="Logo" />
+                            <img src=".\logokkk.png" alt="Logo" />
                         </a>
                     </div>
                     <nav className={styles.menu.desktop}>
