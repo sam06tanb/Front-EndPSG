@@ -23,7 +23,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
   
 a{
@@ -111,6 +111,7 @@ input{
 }
   
 .botao:hover {
+    cursor: pointer;
     background-color: rgba(230, 132, 255, 0.454);
 }
   

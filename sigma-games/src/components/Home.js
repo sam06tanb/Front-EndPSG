@@ -15,17 +15,13 @@ function Home() {
     setMostrarSenha((prevMostrar) => !prevMostrar);
   };
 
+
+
   return (
     <div>
       <div>
         <div id="form-header">
-          <button
-            id="loginBtn"
-            className={`${styles.botaoDiv} ${pagina === 'login' ? styles.botaoDivOn : ''} ${styles.botaoUnderline}`}
-            onClick={() => alterarPagina('login')}
-          >
-            Login
-          </button>
+          <button id="loginBtn" className={`${styles.botaoDiv} ${pagina === 'login' ? styles.botaoDivOn : ''} ${styles.botaoUnderline}`} onClick={() => alterarPagina('login')}> Login </button>
           <button
             id="cadastroBtn"
             className={`${styles.botaoDiv} ${pagina === 'cadastro' ? styles.botaoDivOn : ''}`}
