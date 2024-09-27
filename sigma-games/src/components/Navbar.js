@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.css';
+import logo from './logo.svg';
+import lupa from './lupa.png';
 
 function Navbar() {
     return (
@@ -8,28 +10,42 @@ function Navbar() {
                 <div className={styles.interface}>
                     <div className={styles.logo}>
                         <a className="logo" href="index.html">
-                            <img src=".\logokkk.png" alt="Logo" />
+                            <img src={logo} alt="Logo" />
                         </a>
                     </div>
                     <nav className={styles.menu.desktop}>
                         <ul className={styles.menu}>
                             <div className={styles.homeLine}>
                                 <li>
-                                    <a href="#inicio">HOME</a>
+                                    <a href="#inicio">Ofertas</a>
                                 </li>
                             </div>
                             <li>
-                                <a href="#quem">NOSSA EQUIPE</a>
+                                <a href="#quem">PC</a>
                             </li>
                             <li>
-                                <a href="#areas-praticas">ÁREAS DE ATUAÇÃO</a>
+                                <a href="#quem">Xbox</a>
+                            </li>
+                            <li>
+                                <a href="#areas-praticas">Playstation</a>
+                            </li>
+                            <li>
+                                <a href="#areas-praticas">Nintendo</a>
                             </li>
                         </ul>
                     </nav>
-                    <div className={styles.contato}>
-                        <a href="contato.html" style={{ textDecoration: 'none' }}>
-                            <button>Contato</button>
-                        </a>
+                    <div className={styles.passwordContainer}>
+                        <input
+                                type={'text'}
+                                id="busca"
+                                placeholder="Buscar"
+                                required
+                        />
+                        <a> <img
+                                id="eye-icon"
+                                src={lupa}
+                                alt="Mostrar/Esconder"
+                        /> </a>
                     </div>
                 </div>
             </header>

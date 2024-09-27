@@ -3,10 +3,10 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #8104b73e;
+    background-color: rgba(96, 31, 109, 0.5);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s, height 0.3s, padding 0.3s;
-    padding: 20px 4%;
+    padding: 25px 4%;
     height: 40px;
     right: 0vh;
 }
@@ -57,14 +57,14 @@ header a:hover {
 .menu a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     transition: color 0.3s, transform 0.3s;
 }
 
 
 .menu a:hover {
-    color: #5D4032;
+    color: rgb(232, 230, 232)
 }
 
 .menu li::after {
@@ -72,7 +72,7 @@ header a:hover {
     display: block;
     width: 0;
     height: 2px;
-    background: #5D4032;
+    background: white;
     transition: width 0.3s;
     position: absolute;
     bottom: -5px;
@@ -88,7 +88,7 @@ header a:hover {
     display: block;
     width: 0;
     height: 2px;
-    background: #5D4032;
+    background: white;
     transition: width 0.3s;
     position: absolute;
     bottom: -5px;
@@ -99,7 +99,19 @@ header a:hover {
     width: 100%;
 }
 
+.passwordContainer img {
+    opacity: 100%;
+    left: 2vh;
+    top: 10px;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
 
+.passwordContainer {
+    bottom: 6px;
+    position: relative;
+}
 
 
 .menu li:hover::after {
@@ -109,7 +121,7 @@ header a:hover {
 .logo img {
     opacity: 100%;
     color: aliceblue;
-    width: 50px;
+    width: 150px;
     height: 50px;
     transition: transform 0.3s;
 }
@@ -127,7 +139,7 @@ header a:hover {
     align-items: center;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #5D4032;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     cursor: pointer;
