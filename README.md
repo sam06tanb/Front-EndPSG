@@ -1,71 +1,71 @@
-# Simulated Game Sales Website 
+# Sigma Games - Website de Vendas Simuladas de Jogos
 
-## Overview
+## Visão Geral
 
-This project is a **Simulated Game Sales Website** designed to mimic the functionality of a real-world game store. Users can browse, search, and "purchase" games (no real transactions are made). The project serves as an academic or training purpose platform, allowing contributors to gain experience in both **frontend** and **backend** development, utilizing a variety of modern technologies.
+Este projeto é um **Website de Vendas Simuladas de Jogos**, projetado para imitar a funcionalidade de uma loja de jogos real. Os usuários podem navegar, pesquisar e "comprar" jogos (não são realizadas transações reais). O projeto serve como uma plataforma para fins acadêmicos ou de treinamento, permitindo que os colaboradores adquiram experiência tanto no desenvolvimento **frontend** quanto **backend**, utilizando diversas tecnologias modernas.
 
-The site **does not involve any actual financial transactions** and is purely a simulated environment for demonstrating e-commerce functionalities.
-
----
-
-## Project Features
-
-- **Game Listings**: Users can view a wide range of game offerings across different platforms (PC, Xbox, PlayStation, and Nintendo).
-- **User Authentication**: Login and registration functionality with password visibility toggle for a better user experience.
-- **Search Functionality**: Users can search for games by name or category.
-- **Simulated Purchases**: Users can add games to their cart and proceed with a mock checkout process.
-- **Backend API Integration**: All actions, such as fetching games and managing user sessions, are handled by the backend.
+O site **não envolve transações financeiras reais** e é puramente um ambiente simulado para demonstrar funcionalidades de e-commerce.
 
 ---
 
-## Technologies Used
+## Funcionalidades do Projeto
+
+- **Listagem de Jogos**: Os usuários podem visualizar uma ampla gama de ofertas de jogos para diferentes plataformas (PC, Xbox, PlayStation e Nintendo).
+- **Autenticação de Usuário**: Funcionalidade de login e registro com alternância de visibilidade da senha para melhorar a experiência do usuário.
+- **Funcionalidade de Busca**: Os usuários podem buscar jogos por nome ou categoria.
+- **Compras Simuladas**: Os usuários podem adicionar jogos ao carrinho e prosseguir com um processo de checkout fictício.
+- **Integração com API Backend**: Todas as ações, como busca de jogos e gerenciamento de sessões de usuário, são tratadas pelo backend.
+
+---
+
+## Tecnologias Utilizadas
 
 ### Frontend:
-- **React**: Handles the user interface with a dynamic, responsive design.
-- **JavaScript**: Provides interactive elements on the site.
-- **HTML/CSS**: Structure and styling for the website's look and feel.
-- **Axios**: For making HTTP requests to the backend API.
+- **React**: Gerencia a interface do usuário com design dinâmico e responsivo.
+- **JavaScript**: Proporciona elementos interativos no site.
+- **HTML/CSS**: Estrutura e estilização para a aparência e usabilidade do site.
+- **Axios**: Para realizar requisições HTTP para a API do backend.
 
 ### Backend:
-- **Java**: Powers the server-side logic and API functionality.
-- **XAMPP**: Used to set up an Apache server and MySQL database locally.
-- **SQL**: For database management, storing user data, game inventory, and transaction history.
-- **Postman**: Tool for API testing and debugging.
-- **IntelliJ IDEA**: IDE used for backend development and debugging.
+- **Java**: Responsável pela lógica do lado do servidor e pela funcionalidade da API.
+- **XAMPP**: Usado para configurar um servidor Apache e banco de dados MySQL localmente.
+- **SQL**: Para gerenciamento de banco de dados, armazenando dados de usuários, inventário de jogos e histórico de transações.
+- **Postman**: Ferramenta para testar e depurar APIs.
+- **IntelliJ IDEA**: IDE utilizada para o desenvolvimento e depuração do backend.
 
 ---
 
-## Project Setup
+## Configuração do Projeto
 
-### Prerequisites
+### Pré-requisitos
 
-- **Node.js**: Install Node.js to run the frontend using React.
-- **XAMPP**: Set up Apache and MySQL for local server and database management.
-- **IntelliJ IDEA**: Install for Java backend development.
-- **Postman**: Optional for API testing.
+- **Node.js**: Instale o Node.js para rodar o frontend usando React.
+- **XAMPP**: Configure o Apache e o MySQL para gerenciar o servidor local e o banco de dados.
+- **IntelliJ IDEA**: Instale para o desenvolvimento do backend em Java.
+- **Postman**: Opcional, para teste de API.
 
-### Clone the Repository
+### Clonar o Repositório
 
 ```bash
-git clone https://github.com/yourusername/game-sales-simulated.git
+git clone https://github.com/seuusuario/game-sales-simulated.git
 cd game-sales-simulated
 ```
 
-### Frontend Setup
+### Configuração do Frontend
 
-1. Navigate to the `frontend` folder:
+1. Navegue até a pasta `frontend`:
    ```bash
    cd sigma-games
    ```
 
-2. Install dependencies:
+2. Instale as dependências:
    ```bash
    npm install
    ```
 
-3. Start the frontend server:
+3. Inicie o servidor do frontend:
    ```bash
    npm start
    ```
 
-The frontend server should be running on `http://localhost:3000`.
+O servidor do frontend deverá estar rodando em `http://localhost:3000`.
