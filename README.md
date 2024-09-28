@@ -55,7 +55,7 @@ cd game-sales-simulated
 
 1. Navigate to the `frontend` folder:
    ```bash
-   cd frontend
+   cd sigma-games
    ```
 
 2. Install dependencies:
@@ -69,54 +69,3 @@ cd game-sales-simulated
    ```
 
 The frontend server should be running on `http://localhost:3000`.
-
-### Backend Setup
-
-1. Open the `backend` folder in **IntelliJ IDEA**.
-2. Set up your MySQL database via **XAMPP**:
-   - Open **phpMyAdmin** and create a new database for the project (e.g., `game_sales_db`).
-   - Import the SQL file (`database/schema.sql`) to initialize tables and data.
-3. Update database connection settings in the backend configuration (e.g., `src/main/resources/application.properties`):
-   ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/game_sales_db
-   spring.datasource.username=root
-   spring.datasource.password=password
-   ```
-4. Run the backend server via IntelliJ.
-
-The backend server should be running on `http://localhost:8080`.
-
-### Testing API
-
-Use **Postman** to test backend API endpoints. Example routes include:
-
-- `GET /games`: Fetch all available games.
-- `POST /auth/login`: Login endpoint.
-- `POST /checkout`: Simulate a game purchase.
-
----
-
-## Important Notes
-
-- **No Real Transactions**: This project is strictly for educational purposes. No actual payments or financial transactions occur on the site.
-- **Simulated Environment**: All purchases and user data are purely for simulating a real game sales platform.
-
----
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix (`git checkout -b feature-name`).
-3. Make your changes and commit (`git commit -m 'Add new feature'`).
-4. Push to your branch (`git push origin feature-name`).
-5. Create a Pull Request (PR) for review.
-
----
-
-## License
-
-This project is open-source under the MIT License.
-
----
-
-Feel free to adapt this README to your specific project needs!
