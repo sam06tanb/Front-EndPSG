@@ -59,7 +59,7 @@ function Navbar() {
         <div className={styles.passwordContainer}>
           
           <input type="text" id="busca" placeholder="Buscar" required />
-
+          
           <a href="https://google.com" target="blank_">
             <img id="eye-icon" src={lupa} alt="Mostrar/Esconder" />
           </a>
@@ -67,7 +67,6 @@ function Navbar() {
         </div>
 
       </div>
-      
     </header>
   );
 }
