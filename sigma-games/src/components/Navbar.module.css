@@ -1,158 +1,131 @@
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(96, 31, 109, 0.5);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s, height 0.3s, padding 0.3s;
-    padding: 25px 4%;
-    height: 40px;
-    right: 0vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(96, 31, 109, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, height 0.3s, padding 0.3s;
+  padding: 25px 4%;
+  height: 40px;
+  right: 0vh;
 }
 
 header.scrolled {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 10px 4%;
-    height: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px 4%;
+  height: 70px;
 }
 
 header > .interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header a {
-    transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 header a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .interface {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .menu-desktop {
-    flex-grow: 1;
-    text-align: center;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .menu li {
-    margin: 0 40px;
-    position: relative;
+  margin: 0 40px;
+  position: relative;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
 }
 
-
 .menu a:hover {
-    color: rgb(232, 230, 232)
+  color: rgb(232, 230, 232);
 }
 
 .menu li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
-.homeLine a{
-    color: #ffffff;
-}
-
-.homeLine li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+.homeLine a {
+  color: #ffffff;
 }
 
 .homeLine li::after {
-    width: 100%;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.homeLine li::after {
+  width: 100%;
 }
 
 .passwordContainer img {
-    opacity: 100%;
-    left: 2vh;
-    top: 10px;
-    position: relative;
-    height: 30px;
-    width: 30px;
+  opacity: 100%;
+  left: 2vh;
+  top: 10px;
+  position: relative;
+  height: 30px;
+  width: 30px;
 }
 
 .passwordContainer {
-    bottom: 6px;
-    position: relative;
+  bottom: 6px;
+  position: relative;
 }
 
-
 .menu li:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .logo img {
-    opacity: 100%;
-    color: aliceblue;
-    width: 150px;
-    height: 50px;
-    transition: transform 0.3s;
+  left: 10vh;
+  position: relative;
+  opacity: 100%;
+  color: aliceblue;
+  width: 150px;
+  height: 50px;
+  transition: transform 0.3s;
 }
 
 .logo img:hover {
-    transform: scale(1.03);
-}
-
-.contato img {
-    height: 20px;
-}
-
-.contato button {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.contato button img {
-    margin-right: 10px;
-}
-
-.contato button:hover {
-    background-color: #442f24;
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
