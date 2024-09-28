@@ -121,7 +121,7 @@ header a:hover {
   position: relative;
   opacity: 100%;
   color: aliceblue;
-  width: 150px;
+  width: 100px;
   height: 50px;
   transition: transform 0.3s;
 }
@@ -129,3 +129,4 @@ header a:hover {
 .logo img:hover {
   transform: scale(1.03);
 }
+
