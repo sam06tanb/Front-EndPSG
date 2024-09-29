@@ -30,11 +30,11 @@ function Home() {
   return (
       <div id="home" className={styles.home}>
         <div id="form-header" className={styles.header}>
-          <button id="loginBtn" className={`${styles.botaoDiv} ${pagina === "login" ? styles.botaoDivOn : ""} ${styles.botaoUnderline}`} onClick={() => alterarPagina("login")}>
+          <button id="loginBtn" className={`${styles.botaoDiv} ${pagina === "login" ? (styles.botaoDivOn) : ""}`} onClick={() => alterarPagina("login")}>
             {" "}Login{" "}
           </button>
-          <button id="cadastroBtn" className={`${styles.botaoDiv} ${pagina === "cadastro" ? styles.botaoDivOn : ""}`} onClick={() => alterarPagina("cadastro")}>
-            <u>Cadastro</u>
+          <button id="cadastroBtn" className={`${styles.botaoDiv} ${pagina === "cadastro" ? (styles.botaoDivOn) : ""}`} onClick={() => alterarPagina("cadastro")}>
+            <u>Cadastro</u> 
           </button>
         </div>
 

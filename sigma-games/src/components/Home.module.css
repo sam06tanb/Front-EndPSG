@@ -5,10 +5,6 @@
   text-decoration: none;
 }
 
-.botaoUnderline {
-  text-decoration: underline;
-}
-
 body {
   color: white;
   height: 100vh;
@@ -99,6 +95,7 @@ input {
   font-size: 11px;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
 }
 
 .botaoDivOn:hover {
