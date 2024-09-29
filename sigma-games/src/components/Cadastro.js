@@ -9,8 +9,8 @@ function Home() {
   useEffect(() => {
     ScrollReveal().reveal("#home", {
       origin: "top",
-      distance: "50px",
-      duration: 200,
+      distance: "0px",
+      duration: 1000,
       reset: false,
     });
 
