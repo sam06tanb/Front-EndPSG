@@ -1,0 +1,215 @@
+/* Estilos Básicos do Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(96, 31, 109, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, height 0.3s, padding 0.3s;
+  padding: 0.1em 4%;
+  padding-top: 1em;
+  height: 70px;
+  right: 0;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px 4%;
+  height: 60px;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  transition: transform 0.3s;
+}
+
+header a:hover {
+  transform: scale(1.1);
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.menu-desktop {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+  color: rgb(232, 230, 232);
+}
+
+.menu li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.homeLine a {
+  color: #ffffff;
+}
+
+.homeLine li::after {
+  width: 100%;
+}
+
+.passwordContainer img {
+  opacity: 1;
+  left: 2vh;
+  top: 10px;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.passwordContainer {
+  bottom: 6px;
+  position: relative;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+
+.logo img {
+  left: 10vh;
+  position: relative;
+  opacity: 1;
+  color: aliceblue;
+  width: 100px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsividade */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  header {
+    padding: 20px 5%;
+    height: 60px;
+  }
+
+  .menu li {
+    margin: 0 15px;
+  }
+
+  .menu a {
+    font-size: 0.95rem;
+  }
+
+  .logo img {
+    width: 90px;
+    height: 45px;
+  }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 5%;
+    height: 50px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    background-color: rgba(96, 31, 109, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu a {
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 40px;
+  }
+
+  /* Botão de Menu Hamburger */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: all 0.3s;
+  }
+}
+
+/* Pequenas Telas */
+@media (max-width: 480px) {
+  header {
+    padding: 10px 5%;
+    height: 45px;
+  }
+
+  .menu a {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,156 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  color: white;
+  height: 100vh;
+  opacity: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.esqueceuasenha {
+  top:10px;
+  position: relative;
+}
+
+a {
+  text-align: center;
+  color: white;
+}
+
+a:active {
+  color: purple;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  padding-right: 30px;
+}
+
+.header{
+  width: 260px;
+  height: 50px;
+}
+
+.box {
+  width: 200px;
+  height: 7em;
+  padding: 30px;
+  padding-bottom: 83px;
+  border: 2px 10%;
+  border-radius: 10px;
+  background-color: rgba(96, 31, 109, 0.5);
+}
+
+.botaoDiv {
+  margin-left: 5px;
+  position: relative;
+  padding: 8px;
+  width: 70px;
+  border: 1px solid transparent;
+  top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  background-color: rgba(96, 31, 109, 0.5);
+}
+
+.botaoDiv:hover {
+  background-color: rgba(128, 60, 145, 0.454);
+}
+
+.botaoDiv:active {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  background-color: rgba(114, 13, 139, 0.34);
+}
+
+.botaoDivOn {
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  width: 70px;
+  border: 1px solid transparent;
+  top: 15px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+
+.botaoDivOn:hover {
+  background-color: rgba(77, 29, 88, 0.454);
+}
+
+.botaoDivOn:active {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  background-color: rgba(114, 13, 139, 0.34);
+}
+
+.botao {
+  padding: 5px;
+  width: 110px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  background-color: rgba(234, 150, 255, 0.2);
+}
+
+.botao:hover {
+  cursor: pointer;
+  background-color: rgba(230, 132, 255, 0.454);
+}
+
+.botao:active {
+  padding: 5px;
+  width: 110px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  background-color: rgba(114, 13, 139, 0.34);
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  pointer-events: all;
+}
+
+img {
+  opacity: 70%;
+  width: 10px;
+}
